@@ -1,6 +1,8 @@
 # my_controller Repository
 
-This repository is a demo ROS package for UR3e with two demo nodes: a publisher nodes which publishes some joint positions which will be executed by the (fake) robot and a subscriber nodes which prints the joint states of the robot on the console. We assume you have followed the [ROS2 Foxy Tutorials](https://docs.ros.org/en/foxy/Tutorials.html) up to [writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) (and ideally also [Launch](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Launch-Main.html)).
+This repository is a (very simple) demo ROS package for UR3e with two demo nodes: a publisher nodes which publishes some joint positions which will be executed by the (fake) robot and a subscriber nodes which prints the joint states of the robot on the console. We assume you have followed the [ROS2 Foxy Tutorials](https://docs.ros.org/en/foxy/Tutorials.html) up to [writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) (and ideally also [Launch](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Launch-Main.html)).
+
+If you want to know more about the ur manipulation with ROS (without using moveIt), checkout the documentations on [`joint_trajectory_controller`](https://control.ros.org/master/doc/ros2_controllers/joint_trajectory_controller/doc/userdoc.html) and [`joint_state_broadcaster`](https://control.ros.org/master/doc/ros2_controllers/joint_state_broadcaster/doc/userdoc.html).
 
 ## Setup
 We assume you have followed the [Installation Guide](https://github.com/opallch/ur3e_environment/wiki/Installation-Guide) (and have started the docker if you are on Ubuntu/MacOS: ).
