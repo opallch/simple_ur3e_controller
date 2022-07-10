@@ -3,7 +3,7 @@
 This repository is a demo ROS package for UR3e with two demo nodes: a publisher nodes which publishes some joint positions which will be executed by the (fake) robot and a subscriber nodes which prints the joint states of the robot on the console. We assume you have followed the [ROS2 Foxy Tutorials](https://docs.ros.org/en/foxy/Tutorials.html) up to [writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) (and ideally also [Launch](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Launch-Main.html)).
 
 ## Setup
-We assume you have followed the [Installation Guide](https://github.com/opallch/ur3e_environment/wiki/Installation-Guide).
+We assume you have followed the [Installation Guide](https://github.com/opallch/ur3e_environment/wiki/Installation-Guide) (and have started the docker if you are on Ubuntu/MacOS: ).
 1. In `~/cocobots_ws/src`, clone this repository:
 ```bash
 git clone https://github.com/opallch/my_controller.git
