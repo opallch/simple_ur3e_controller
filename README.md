@@ -1,6 +1,6 @@
 # my_controller Repository
 
-This repository is a (very simple) demo ROS package for UR3e with two demo nodes: a publisher nodes which publishes some joint positions which will be executed by the (fake) robot and a subscriber nodes which prints the joint states of the robot on the console. We assume you have followed the [ROS2 Foxy Tutorials](https://docs.ros.org/en/foxy/Tutorials.html) up to [writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) (and ideally also [Launch](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Launch-Main.html)).
+This repository is a (very simple) demo ROS package for UR3e with two demo nodes: a publisher nodes which publishes some joint positions which will be executed by the (fake) robot and a subscriber nodes which prints the joint states of the robot on the console. We assume you have followed the [ROS2 Foxy Tutorials](https://docs.ros.org/en/foxy/Tutorials.html) up to [writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) (and ideally also [Launch](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Launch-Main.html)). **warning: don't adjust the joint angles in the yaml file to avoid collision**
 
 If you want to know more about the ur manipulation with ROS (without using moveIt), checkout the documentations on [`joint_trajectory_controller`](https://control.ros.org/master/doc/ros2_controllers/joint_trajectory_controller/doc/userdoc.html) and [`joint_state_broadcaster`](https://control.ros.org/master/doc/ros2_controllers/joint_state_broadcaster/doc/userdoc.html).
 
@@ -40,8 +40,8 @@ rqt
 If your current location is the root of package:
 - All self-written nodes are located in `my_controller/`
 - Dependencies of the nodes should be included in `package.xml`
-- The joint positions and other parameters used by `my_controller/publisher_joint_trajectory_controller.py` are defined in `config/publisher_config.yaml`.
+- The joint angles and other parameters used by `my_controller/publisher_joint_trajectory_controller.py` are defined in `config/publisher_config.yaml` ( **warning: don't adjust the joint angles in the yaml file to avoid collision**).
 - In `setup.py`, there are two important things to be defined:
     - entry points of your executables aka. nodes
     - files needed to be installed for running the nodes#
-- Launch files can be found in `launch/`. There is only one launch file `my_controller.launch.py` comes with the repository.
+- Launch files can be found in `launch/`. There is only one launch file `my_controller.launch.py` comes with the repository. 
