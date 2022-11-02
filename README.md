@@ -1,4 +1,4 @@
-# my_controller Repository
+# simple_ur3e_controller Repository
 
 This repository is a (very simple) demo ROS package for UR3e with two demo nodes: a publisher nodes which publishes some joint positions which will be executed by the (fake) robot and a subscriber nodes which prints the joint states of the robot on the console. We assume you have followed the [ROS2 Foxy Tutorials](https://docs.ros.org/en/foxy/Tutorials.html) up to [writing a simple publisher and subscriber (Python)](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html) (and ideally also [Launch](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Launch/Launch-Main.html)). **warning: don't adjust the joint angles in the yaml file to avoid collision**
 
